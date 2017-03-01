@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar  color="dougBlue">
+    <ion-title>Doug Narinas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.fanpop.com%2Fimages%2Fimage_uploads%2FDoug-doug-112547_185_200.jpg&f=1">
+    </ion-avatar>
+    <h2>Doug Narinas</h2>
+    
+  </ion-item>
+  <ion-item *ngFor="let item of list">
+     <ion-avatar item-left>
+      <img src="{{item.img}}">
+    </ion-avatar>
+    <h2>{{item.name}}</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-33>
+          <ion-icon name="logo-android"></ion-icon>
+        </ion-col>
+         <ion-col width-33>
+          <ion-icon name="logo-apple"></ion-icon>
+        </ion-col>
+        <ion-col width-33>
+          <ion-icon name="logo-angular"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-list>
+</ion-content>
